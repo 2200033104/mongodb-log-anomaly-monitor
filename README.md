@@ -42,11 +42,11 @@ This project provides an automated system that:
 ## **Technology Stack**
 
 ```
-Frontend   : HTML, JavaScript
-Backend    : Node.js, Express.js
-AI Engine  : Python, Scikit-learn
-Data       : JSON-based log storage
-Algorithm  : Isolation Forest
+Frontend   : HTML, JavaScript  
+Backend    : Node.js, Express.js  
+AI Engine  : Python, Scikit-learn  
+Data       : JSON-based log storage  
+Algorithm  : Isolation Forest  
 ```
 
 ---
@@ -54,12 +54,12 @@ Algorithm  : Isolation Forest
 ## **How It Works**
 
 ```
-Step 1: Sample MongoDB logs are collected
-Step 2: Python AI engine processes logs
-Step 3: Isolation Forest detects anomalies based on response time
-Step 4: Processed results are stored as output_logs.json
-Step 5: Node.js backend exposes API
-Step 6: Dashboard fetches and displays anomaly insights
+Step 1: Sample MongoDB logs are collected  
+Step 2: Python AI engine processes logs  
+Step 3: Isolation Forest detects anomalies based on response time  
+Step 4: Processed results are stored as output_logs.json  
+Step 5: Node.js backend exposes API  
+Step 6: Dashboard fetches and displays anomaly insights  
 ```
 
 ---
@@ -70,6 +70,26 @@ Step 6: Dashboard fetches and displays anomaly insights
 * Number of detected anomalies
 * Log-level anomaly status (Yes / No)
 * Interactive dashboard table
+
+---
+
+## **Project Screenshots (Execution Proof)**
+
+### Dashboard
+
+<img width="922" height="663" alt="1" src="https://github.com/user-attachments/assets/275430aa-078f-41cc-919e-d056d14c8ef0" />
+
+
+
+### Backend Running
+
+<img width="714" height="466" alt="2" src="https://github.com/user-attachments/assets/9a52c1d6-deac-4159-a2c2-bff1318379ab" />
+
+
+### AI Output
+
+![3](https://github.com/user-attachments/assets/d7c74f54-8ce8-44a7-9c95-eaca7045cb6b)
+
 
 ---
 
@@ -93,6 +113,11 @@ mongodb-log-anomaly-monitor/
 │   ├── index.html
 │   └── script.js
 │
+├── docs/
+│   ├── dashboard.png
+│   ├── backend_running.png
+│   └── ai_output.png
+│
 ├── requirements.txt
 └── README.md
 ```
@@ -101,19 +126,19 @@ mongodb-log-anomaly-monitor/
 
 ## **How to Run the Project**
 
-### **1. Install Python Dependencies**
+### 1. Install Python Dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-### **2. Run AI Engine**
+### 2. Run AI Engine
 
 ```
 python ai-engine/anomaly_detection.py
 ```
 
-### **3. Start Backend**
+### 3. Start Backend
 
 ```
 cd backend
@@ -127,7 +152,7 @@ Backend will run at:
 http://localhost:5000
 ```
 
-### **4. Open Dashboard**
+### 4. Open Dashboard
 
 Open in browser:
 
@@ -168,5 +193,5 @@ Machine Learning | Python | MongoDB | Node.js | Express | AI Monitoring | Log An
 
 ## **Author**
 
-**Jahnavi**
+**Janu**
 *CSE | AI & Cloud Enthusiast*

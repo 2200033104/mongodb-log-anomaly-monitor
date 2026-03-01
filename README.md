@@ -1,4 +1,8 @@
-# **MongoDB Log Anomaly & Security Monitor**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/25412d19-4b91-43d5-9b41-7d63d4ae4664" />
+</p>
+
+## **MongoDB Log Anomaly & Security Monitor**
 
 An **AI-powered monitoring system** that detects anomalies, security threats, and performance issues from MongoDB logs using **Machine Learning** and real-time analysis.
 

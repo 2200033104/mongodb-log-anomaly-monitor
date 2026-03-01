@@ -1,0 +1,8 @@
+[
+  {"timestamp":"2026-01-01","message":"Connection established","response_time":120},
+  {"timestamp":"2026-01-01","message":"Slow query detected","response_time":900},
+  {"timestamp":"2026-01-01","message":"Authentication failed","response_time":200},
+  {"timestamp":"2026-01-01","message":"Normal operation","response_time":150},
+  {"timestamp":"2026-01-01","message":"Database timeout","response_time":1200},
+  {"timestamp":"2026-01-01","message":"Normal operation","response_time":130}
+]

@@ -1,88 +1,172 @@
-# mongodb-log-anomaly-monitor
-MongoDB Log Anomaly & Security Monitor
+# **MongoDB Log Anomaly & Security Monitor**
 
-An AI-powered system that detects anomalies, security threats, and performance issues from MongoDB logs using Machine Learning and real-time monitoring.
+An **AI-powered monitoring system** that detects anomalies, security threats, and performance issues from MongoDB logs using **Machine Learning** and real-time analysis.
 
-Problem Statement
+---
 
-MongoDB environments generate large volumes of logs that are difficult to analyze manually. Critical issues such as slow queries, unauthorized access, or system failures often go unnoticed until they impact performance or security.
+## **Problem Statement**
 
-Solution
+MongoDB environments generate a large volume of logs that are difficult to monitor manually. Critical issues such as:
 
-This project automatically:
+* Slow queries
+* Unauthorized access attempts
+* System failures
+* Performance degradation
 
-Analyzes MongoDB logs
+often go unnoticed until they affect system availability or security.
 
-Detects abnormal patterns using Machine Learning (Isolation Forest)
+---
 
-Identifies performance anomalies
+## **Solution**
 
-Provides a dashboard for real-time monitoring
+This project provides an automated system that:
 
-Key Features
+* Analyzes MongoDB log data
+* Detects abnormal patterns using **Machine Learning (Isolation Forest)**
+* Identifies performance-related anomalies
+* Displays insights through an interactive monitoring dashboard
 
-AI-based anomaly detection
+---
 
-Log analysis automation
+## **Key Features**
 
-Performance issue identification
+* **AI-based anomaly detection**
+* **Automated log analysis**
+* **Performance issue identification**
+* **Interactive dashboard visualization**
+* **Lightweight and easy to deploy**
+* **Backend API for processed log data**
 
-Interactive dashboard
+---
 
-Lightweight and easy deployment
+## **Technology Stack**
 
-Technology Stack
+```
+Frontend   : HTML, JavaScript
+Backend    : Node.js, Express.js
+AI Engine  : Python, Scikit-learn
+Data       : JSON-based log storage
+Algorithm  : Isolation Forest
+```
 
-Python (Machine Learning)
+---
 
-Scikit-learn
+## **How It Works**
 
-Node.js & Express
+```
+Step 1: Sample MongoDB logs are collected
+Step 2: Python AI engine processes logs
+Step 3: Isolation Forest detects anomalies based on response time
+Step 4: Processed results are stored as output_logs.json
+Step 5: Node.js backend exposes API
+Step 6: Dashboard fetches and displays anomaly insights
+```
 
-HTML, JavaScript
+---
 
-JSON-based log storage
+## **Output**
 
-How It Works
+* Total number of logs
+* Number of detected anomalies
+* Log-level anomaly status (Yes / No)
+* Interactive dashboard table
 
-Sample MongoDB logs are collected
+---
 
-AI model detects anomalies based on response time
+## **Project Structure**
 
-Backend API serves processed results
+```
+mongodb-log-anomaly-monitor/
+│
+├── data/
+│   ├── sample_logs.json
+│   └── output_logs.json
+│
+├── ai-engine/
+│   └── anomaly_detection.py
+│
+├── backend/
+│   ├── server.js
+│   └── package.json
+│
+├── frontend/
+│   ├── index.html
+│   └── script.js
+│
+├── requirements.txt
+└── README.md
+```
 
-Dashboard displays anomalies and system insights
+---
 
-Output
+## **How to Run the Project**
 
-Total log count
+### **1. Install Python Dependencies**
 
-Anomaly count
+```
+pip install -r requirements.txt
+```
 
-Log-level anomaly status
+### **2. Run AI Engine**
 
-Visual dashboard table
+```
+python ai-engine/anomaly_detection.py
+```
 
-Business Impact
+### **3. Start Backend**
 
-Reduces database downtime
+```
+cd backend
+npm install
+node server.js
+```
 
-Enables proactive issue detection
+Backend will run at:
 
-Improves operational efficiency
+```
+http://localhost:5000
+```
 
-Enhances data security monitoring
+### **4. Open Dashboard**
 
-Future Enhancements
+Open in browser:
 
-Real-time Kafka streaming
+```
+frontend/index.html
+```
 
-NLP-based log classification
+---
 
-Email/SMS alert system
+## **Business Impact**
 
-Docker & Kubernetes deployment
+* Reduces database downtime
+* Enables proactive issue detection
+* Saves manual monitoring effort
+* Improves operational efficiency
+* Enhances database security monitoring
 
-Author
+---
 
-Jahnavi – CSE | AI & Cloud Enthusiast
+## **Future Enhancements**
+
+* Real-time log streaming using Kafka
+* NLP-based log message classification
+* Email / SMS alert system
+* Docker containerization
+* Kubernetes deployment
+* MongoDB integration for live environments
+
+---
+
+## **Skill Tags**
+
+```
+Machine Learning | Python | MongoDB | Node.js | Express | AI Monitoring | Log Analysis | Cloud-Native Concepts
+```
+
+---
+
+## **Author**
+
+**Jahnavi**
+*CSE | AI & Cloud Enthusiast*
